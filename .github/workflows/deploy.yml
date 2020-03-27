@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm ci
       - run: npm run generate
-      - uses: peaceiris/actions-gh-pages@25deb782d00a799f89ae56a01471de34eb584507
+      - uses: peaceiris/actions-gh-pages@ba0b7df03e25ff29c924be8149041119e9421ea6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
