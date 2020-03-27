@@ -1,0 +1,35 @@
+{
+  "name": "yaml-toml-converter",
+  "version": "1.0.0",
+  "description": "YAML/TOML converter",
+  "author": "Fixpoint, Inc.",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.3",
+    "js-yaml": "^3.13.1",
+    "nuxt": "^2.0.0",
+    "vue-property-decorator": "^8.4.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@types/js-yaml": "^3.12.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "stylelint": "^10.1.0"
+  }
+}
