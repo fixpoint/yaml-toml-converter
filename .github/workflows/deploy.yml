@@ -13,5 +13,9 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm ci
       - run: npm run generate
+      - uses: webfactory/ssh-agent@4d1295c53b0ee6c012b6998f7155a09b271a52f5
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        if: github.ref == 'refs/heads/master'
       - run: npm run deploy
         if: github.ref == 'refs/heads/master'
