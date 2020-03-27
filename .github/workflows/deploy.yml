@@ -15,7 +15,7 @@ jobs:
       - run: git fetch --prune
       - uses: actions/setup-node@v1
       - run: npm ci
-      - run: npm run generate
+      - run: npm run generate:gh-pages
       - uses: peaceiris/actions-gh-pages@ba0b7df03e25ff29c924be8149041119e9421ea6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
