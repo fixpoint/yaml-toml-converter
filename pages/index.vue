@@ -6,7 +6,7 @@
         <v-textarea
           outlined
           label="YAML"
-          height="90%"
+          rows="20"
           :value="yaml"
           :error-messages="yamlError"
           @input="onYamlChanged"
@@ -17,6 +17,7 @@
         <v-textarea
           outlined
           label="TOML"
+          rows="20"
           :value="toml"
           :error-messages="tomlError"
           @input="onTomlChanged"
